@@ -10,6 +10,7 @@ export default function Footer() {
     { name: 'Home', href: '#home' },
     { name: 'Approach', href: '#value' },
     { name: 'Services', href: '#services' },
+    { name: 'AI Automation', href: '#automation' },
     { name: 'Process', href: '#process' },
     { name: 'Reviews', href: '#reviews' },
     { name: 'About', href: '#about' },
