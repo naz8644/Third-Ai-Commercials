@@ -3,7 +3,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Clapperboard, Workflow } from 'lucide-react';
 import FloatingCore from '../three/FloatingCore';
 import CanvasErrorBoundary from './CanvasErrorBoundary';
-import { AdsVisual, AutoVisual } from './v2/Visuals';
+import { AutoVisual } from './v2/Visuals';
+import AdVideo from './v2/AdVideo';
 
 const channels = [
   { name: 'Asianet News', logo: '/images/logos/asianet_news.jpg' },
@@ -94,7 +95,7 @@ export default function HeroSection() {
             title="Commercials that look like a big-budget shoot"
             text="TV commercials, product ads, fashion campaigns and brand films, made with AI in days and built to sell."
             tags={['AI TV Commercials', 'Product Ads', 'Brand Films', 'Reels & UGC']}
-            cta="Explore AI ads" visual={<AdsVisual />}
+            cta="Explore AI ads" visual={<AdVideo src="/videos/renaflex-ai-commercial.mp4" poster="/videos/renaflex-ai-commercial.jpg" />}
           />
           <Track
             tone="auto" delay={0.45} href="#automation"
