@@ -5,7 +5,6 @@ import CanvasErrorBoundary from '../components/CanvasErrorBoundary';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ApproachSection from '../components/ApproachSection';
-import WorkCategoriesSection from '../components/WorkCategoriesSection';
 import ServicesSection from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
 import ReviewsSection from '../components/ReviewsSection';
@@ -29,7 +28,6 @@ export default function LandingPage() {
       <main className="relative z-10">
         <HeroSection />
         <ApproachSection />
-        <WorkCategoriesSection />
         <ServicesSection />
         <ProcessSection />
         <ReviewsSection />

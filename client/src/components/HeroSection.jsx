@@ -180,11 +180,11 @@ export default function HeroSection() {
           </a>
 
           <a
-            href="#work"
+            href="#services"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/15 hover:border-white/30 text-white font-semibold text-base sm:text-lg px-7 sm:px-8 py-3.5 sm:py-4 rounded-full backdrop-blur-md transition-all duration-300 active:scale-95"
           >
             <Video className="w-4 h-4 sm:w-5 sm:h-5 text-[#ff2751]" />
-            <span>See Our Portfolio</span>
+            <span>See Our Services</span>
           </a>
         </div>
 
