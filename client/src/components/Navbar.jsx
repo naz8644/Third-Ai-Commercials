@@ -16,12 +16,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Approach', href: '#value' },
-    { name: 'Services', href: '#services' },
-    { name: 'Automation', href: '#automation' },
+    { name: 'AI Ads', href: '#ads' },
+    { name: 'AI Automation', href: '#automation' },
+    { name: 'Why Us', href: '#why' },
     { name: 'Process', href: '#process' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'About', href: '#about' }
+    { name: 'FAQ', href: '#faq' }
   ];
 
   return (

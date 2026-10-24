@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, Instagram, CheckCircle2, Send, MessageCircle } from 'lucide-react';
 
-const PROJECT_TYPES = ['AI Video', 'Product Ads', 'Fashion Campaign', 'Brand Content'];
+const PROJECT_TYPES = ['AI TV Commercial', 'Product / Fashion Ad', 'Brand Content', 'WhatsApp / Chat AI', 'Voice Agent', 'Workflow Automation'];
 
 export default function ContactSection() {
   const fogCanvasRef = useRef(null);
@@ -101,16 +101,16 @@ export default function ContactSection() {
       {/* Main Banner Heading matching root index.html CTA */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 mb-14 space-y-4">
         <h2 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl text-white leading-tight">
-          Ready to make your brand <span className="bg-gradient-to-r from-[#ff2751] to-[#e722ff] bg-clip-text text-transparent">unforgettable?</span>
+          Let's grow your brand <span className="bg-gradient-to-r from-[#ff2751] via-[#e722ff] to-[#22d3ee] bg-clip-text text-transparent">and free your team.</span>
         </h2>
         <p className="text-gray-300 text-lg sm:text-2xl font-light">
-          Tell us about your brand — we'll show you what's possible.
+          Tell us what you need, an AI ad, an automation or both, and we'll show you what's possible.
         </p>
 
         {/* WhatsApp Direct CTA Button */}
         <div className="pt-4">
           <a
-            href="https://wa.me/919539101061?text=Hi%20Third%20AI%20Commercials,%20I'd%20like%20to%20get%20a%20quote%20for%20our%20brand."
+            href="https://wa.me/919539101061?text=Hi%20Third%20AI%20Commercials,%20I'd%20like%20a%20quote%20for%20AI%20ads%20or%20AI%20automation."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ff2751] to-[#e722ff] text-white font-bold text-lg sm:text-xl px-10 py-5 rounded-xl shadow-[0_10px_40px_rgba(255,39,81,0.35)] hover:scale-105 active:scale-95 transition-all duration-300"

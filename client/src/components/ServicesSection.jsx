@@ -1,6 +1,6 @@
 import React from 'react';
 
-const servicesList = [
+export const servicesList = [
   {
     title: 'AI Commercial Videos',
     desc: "Your brand deserves a commercial that actually looks like a commercial. We create high-end video ads with cinematic visuals, real-feeling characters, and professional direction — the kind of quality that used to cost a fortune. Now it doesn't have to.",
@@ -80,7 +80,7 @@ const servicesList = [
   }
 ];
 
-const automationList = [
+export const automationList = [
   {
     title: 'AI WhatsApp & Chat Assistants',
     desc: 'An AI assistant that answers customer questions on WhatsApp and your website day and night, shares prices and details, qualifies leads and books appointments, then hands hot leads to your team.',

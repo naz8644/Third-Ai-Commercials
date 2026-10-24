@@ -4,38 +4,35 @@ import BackgroundCanvas from '../components/BackgroundCanvas';
 import CanvasErrorBoundary from '../components/CanvasErrorBoundary';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import ApproachSection from '../components/ApproachSection';
-import ServicesSection from '../components/ServicesSection';
+import AdsSection from '../components/v2/AdsSection';
+import AutomationSection from '../components/v2/AutomationSection';
+import WhySection from '../components/v2/WhySection';
 import ProcessSection from '../components/ProcessSection';
 import ReviewsSection from '../components/ReviewsSection';
 import AboutSection from '../components/AboutSection';
+import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#080808] text-white selection:bg-[#ff2751] selection:text-white font-sans relative overflow-x-hidden">
-      {/* Custom Cursor & Background Starfield Canvas */}
+    <div className="min-h-screen bg-[#050507] text-white selection:bg-[#ff2751] selection:text-white font-sans relative overflow-x-hidden">
       <CustomCursor />
       <CanvasErrorBoundary fallback={null}>
         <BackgroundCanvas />
       </CanvasErrorBoundary>
-
-      {/* Navigation */}
       <Navbar />
-
-      {/* Main Sections matching root index.html structure */}
       <main className="relative z-10">
         <HeroSection />
-        <ApproachSection />
-        <ServicesSection />
+        <AdsSection />
+        <AutomationSection />
+        <WhySection />
         <ProcessSection />
         <ReviewsSection />
         <AboutSection />
+        <FAQSection />
         <ContactSection />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

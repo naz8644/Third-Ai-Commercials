@@ -25,9 +25,9 @@ export default function AboutSection() {
 
         <p className="text-gray-300 font-light text-base sm:text-xl leading-relaxed max-w-3xl mx-auto">
           Third AI Commercials is{' '}
-          <strong className="text-white font-semibold">Kerala's first AI-native commercial production studio</strong>.{' '}
-          We produce cinematic brand films that air on national television networks — combining AI production
-          with strategic storytelling to make your brand impossible to ignore.
+          <strong className="text-white font-semibold">an AI-native studio from Haripad, Kerala</strong>.{' '}
+          We make cinematic AI commercials that air on Kerala television, and we build AI automations that
+          take repetitive work off growing businesses, so you get more customers and more time.
         </p>
 
         {/* Founders Grid */}

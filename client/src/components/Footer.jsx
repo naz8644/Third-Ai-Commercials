@@ -8,21 +8,21 @@ export default function Footer() {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Approach', href: '#value' },
-    { name: 'Services', href: '#services' },
+    { name: 'AI Ads', href: '#ads' },
     { name: 'AI Automation', href: '#automation' },
+    { name: 'Why Us', href: '#why' },
     { name: 'Process', href: '#process' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'About', href: '#about' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' }
   ];
 
   const servicesList = [
-    { name: 'Broadcast TV Commercials', href: '#services' },
-    { name: 'Cinematic AI Brand Films', href: '#services' },
-    { name: 'AI UGC Creator Content', href: '#services' },
-    { name: 'Product 3D Showcases', href: '#services' },
-    { name: 'Social Performance Ads', href: '#services' }
+    { name: 'AI TV Commercials', href: '#ads' },
+    { name: 'AI Product Ads & Brand Films', href: '#ads' },
+    { name: 'AI WhatsApp Assistants', href: '#automation' },
+    { name: 'AI Voice Agents', href: '#automation' },
+    { name: 'Lead & Workflow Automation', href: '#automation' }
   ];
 
   return (
@@ -54,7 +54,7 @@ export default function Footer() {
               </div>
             </a>
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
-              Kerala’s pioneer AI ad studio — producing cinematic, broadcast-ready commercial films for television and digital platforms in days.
+              Kerala's AI studio for ads and automation: cinematic, broadcast-ready AI commercials, and AI systems that take repetitive work off your team.
             </p>
           </div>
 

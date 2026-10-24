@@ -1,58 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { SectionHead } from './v2/Reveal';
 
-const steps = [
-  ['Strategy', 'One call. Your brand, audience, and goal - mapped and ready.'],
-  ['Script', 'Shot-by-shot, written for AI. You approve before we touch anything.'],
-  ['Creative Direction', 'Style, mood, color — every visual decision locked before production.'],
-  ['AI Production', 'Multiple AI models running at once. Weeks of work, done in days.'],
-  ['Editing', 'Graded, sound-designed, and timed until it feels premium.'],
-  ['Delivery', 'Every format. Every platform. Launch-ready from day one.']
-];
+const tracks = {
+  ads: {
+    label: 'AI Ads',
+    steps: [
+      ['Strategy', 'One call to map your brand, audience and goal.'],
+      ['Script', 'Shot-by-shot script written for AI production. You approve it first.'],
+      ['Creative direction', 'Style, mood, colour and characters locked before production.'],
+      ['AI production', 'Multiple AI models generate every scene at cinematic quality.'],
+      ['Edit and sound', 'Graded, sound-designed and timed until it feels premium.'],
+      ['Delivery', 'Every format for TV, YouTube and social, ready to launch.']
+    ]
+  },
+  auto: {
+    label: 'AI Automation',
+    steps: [
+      ['Discovery call', 'We learn how your business runs and where time is lost.'],
+      ['Workflow map', 'We map the tasks to automate and show you the plan before building.'],
+      ['Build', 'We set up the AI agents and connect your WhatsApp, CRM, sheets and email.'],
+      ['Test', 'Your team tries it with real cases and we fine-tune the answers and steps.'],
+      ['Launch', 'It goes live, with simple training for your staff.'],
+      ['Support', 'We monitor, improve and add new automations as you grow.']
+    ]
+  }
+};
 
 export default function ProcessSection() {
+  const [tab, setTab] = useState('ads');
+  const ads = tab === 'ads';
   return (
-    <section className="section" id="process">
-      <div className="max-w-3xl mx-auto w-full">
-        <div className="eyebrow">Process</div>
-        <h2 className="big-title text-[clamp(28px,5vw,64px)] mb-4 sm:mb-5">
-          From idea to live campaign<br className="hidden sm:block" /> in days, not months.
-        </h2>
-        <p className="sub mb-8 sm:mb-10 text-sm sm:text-base">
-          Six deliberate stages, engineered for speed without sacrificing craft.
-        </p>
-
-        {/* Process Timeline */}
-        <div className="relative flex flex-col w-full">
-          {steps.map((s, idx) => {
-            const isLast = idx === steps.length - 1;
-            return (
-              <div key={idx} className="grid grid-cols-[52px_1fr] sm:grid-cols-[70px_1fr] gap-4 sm:gap-6 py-6 sm:py-8 relative">
-                {/* Vertical Connector */}
-                {!isLast && (
-                  <div
-                    className="absolute left-[25px] sm:left-[34px] top-[62px] sm:top-[70px] bottom-[-6px] w-[1px]"
-                    style={{ background: 'linear-gradient(180deg, #FF2A3B, rgba(255, 42, 59, 0.08))' }}
-                  />
-                )}
-
-                {/* Step Circle */}
-                <div className="process-num font-display text-xs sm:text-sm text-brand-red w-[52px] h-[52px] sm:w-[68px] sm:h-[68px] rounded-full border border-white/10 flex items-center justify-center bg-white/[0.04] relative z-10 flex-shrink-0">
-                  0{idx + 1}
-                </div>
-
-                {/* Step Content */}
-                <div className="pt-1 sm:pt-2">
-                  <h3 className="font-display text-lg sm:text-2xl font-normal text-white mb-1.5">
-                    {s[0]}
-                  </h3>
-                  <p className="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
-                    {s[1]}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+    <section id="process" className="relative py-24 sm:py-32 px-4 sm:px-[6vw] bg-[#050507] border-t border-white/5">
+      <div className="max-w-5xl mx-auto">
+        <SectionHead eyebrow="Process" title="Simple, clear, and fast." sub="Two services, one way of working: you see and approve everything before we build it." />
+        <div className="flex justify-center mb-10">
+          <div className="inline-flex p-1 rounded-full border border-white/10 bg-white/[0.03]" role="tablist">
+            {Object.entries(tracks).map(([k, v]) => (
+              <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)}
+                className={`px-5 sm:px-7 py-2.5 rounded-full text-sm font-semibold transition ${tab === k ? (k === 'ads' ? 'bg-gradient-to-r from-[#ff2751] to-[#e722ff] text-white' : 'bg-gradient-to-r from-cyan-500 to-violet-500 text-white') : 'text-gray-400 hover:text-white'}`}>
+                {v.label}
+              </button>
+            ))}
+          </div>
         </div>
+        <AnimatePresence mode="wait">
+          <motion.ol key={tab} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.35 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {tracks[tab].steps.map(([t, d], i) => (
+              <li key={t} className="relative rounded-2xl p-6 v2-card">
+                <span className={`font-mono text-xs ${ads ? 'text-[#ff5d7e]' : 'text-cyan-300'}`}>{String(i + 1).padStart(2, '0')}</span>
+                <h3 className="mt-3 font-display text-white text-lg">{t}</h3>
+                <p className="mt-1.5 text-[13px] sm:text-sm text-gray-400 font-light leading-relaxed">{d}</p>
+                <div className={`absolute left-6 right-6 bottom-0 h-px ${ads ? 'bg-gradient-to-r from-[#ff2751]/60 to-transparent' : 'bg-gradient-to-r from-cyan-400/60 to-transparent'}`} />
+              </li>
+            ))}
+          </motion.ol>
+        </AnimatePresence>
       </div>
     </section>
   );
