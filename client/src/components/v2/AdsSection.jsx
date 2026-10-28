@@ -2,7 +2,7 @@ import React from 'react';
 import { Tv, Timer, Languages, Layers } from 'lucide-react';
 import Reveal, { SectionHead } from './Reveal';
 import ServiceGrid from './ServiceGrid';
-import { AdsVisual } from './Visuals';
+import AdVideo from './AdVideo';
 import { servicesList } from '../ServicesSection';
 
 const points = [
@@ -20,7 +20,14 @@ export default function AdsSection() {
         <SectionHead tone="ads" eyebrow="AI Ad Services" title={<>Cinematic AI ads that make people <span className="v2-ads-text">stop and buy.</span></>}
           sub="Anyone can generate a video now. We build ads with strategy, story and cultural understanding, so every frame works to grow your brand and bring you customers." />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center mb-14 sm:mb-20">
-          <Reveal><AdsVisual /></Reveal>
+          <Reveal>
+            <AdVideo
+              src="/videos/ads-reel.mp4"
+              poster="/videos/ads-reel.jpg"
+              label="Third AI Commercials · AI Ad"
+              aspectClass="aspect-[9/16] max-h-[640px] mx-auto"
+            />
+          </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((p, i) => (
               <Reveal key={p.t} delay={i * 0.07}>

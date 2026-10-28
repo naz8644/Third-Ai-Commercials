@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 
-export default function AdVideo({ src, poster, label = 'Renaflex · AI TV Commercial' }) {
+export default function AdVideo({ src, poster, label = 'Renaflex · AI TV Commercial', aspectClass = 'aspect-video' }) {
   const ref = useRef(null);
   const [muted, setMuted] = useState(true);
 
@@ -28,7 +28,7 @@ export default function AdVideo({ src, poster, label = 'Renaflex · AI TV Commer
   };
 
   return (
-    <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black shadow-[0_20px_60px_rgba(255,39,81,0.18)]">
+    <div className={`relative w-full ${aspectClass} rounded-2xl overflow-hidden border border-white/10 bg-black shadow-[0_20px_60px_rgba(255,39,81,0.18)]`}>
       <video
         ref={ref}
         src={src}
