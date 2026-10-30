@@ -11,7 +11,10 @@ export const faqs = [
   ['Do you make Malayalam ads?', 'Yes. We make ads in Malayalam and English, written for the audience you want to reach.'],
   ['What kind of work can AI automation take over?', 'Repetitive, rule-based work: answering common customer questions on WhatsApp, capturing and following up leads, booking appointments, sending reminders, updating spreadsheets or CRM, and preparing daily reports.'],
   ['Do we need to change our software?', 'Usually not. We connect the tools you already use, such as WhatsApp, Google Sheets, your CRM and email, using platforms like n8n.'],
-  ['How much do your services cost?', 'It depends on the scope. Message us on WhatsApp with what you need and we will send a clear quote.']
+  ['How much do your services cost?', 'It depends on the scope. Message us on WhatsApp with what you need and we will send a clear quote.'],
+  ['Do you build AI WhatsApp assistants for shops and showrooms?', 'Yes. We build AI WhatsApp assistants that answer customer questions instantly, collect their name and need, book appointments and hand serious enquiries to your team, so nothing gets missed outside business hours.'],
+  ['Can you connect our automation to n8n?', 'Yes. We build and connect automations using n8n, linking WhatsApp, Google Sheets, your CRM and email so leads and follow-ups flow between the tools you already use without manual work.'],
+  ['Do you work outside Haripad, in Kochi, Thiruvananthapuram or Kozhikode?', 'Yes. We are based in Haripad, Alappuzha, and work with businesses across Kerala, including Kochi, Thiruvananthapuram, Kozhikode, Kollam and Kottayam, for both AI ads and AI automation.']
 ];
 
 export default function FAQSection() {
