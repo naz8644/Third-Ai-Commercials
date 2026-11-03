@@ -14,7 +14,10 @@ export const faqs = [
   ['How much do your services cost?', 'It depends on the scope. Message us on WhatsApp with what you need and we will send a clear quote.'],
   ['Do you build AI WhatsApp assistants for shops and showrooms?', 'Yes. We build AI WhatsApp assistants that answer customer questions instantly, collect their name and need, book appointments and hand serious enquiries to your team, so nothing gets missed outside business hours.'],
   ['Can you connect our automation to n8n?', 'Yes. We build and connect automations using n8n, linking WhatsApp, Google Sheets, your CRM and email so leads and follow-ups flow between the tools you already use without manual work.'],
-  ['Do you work outside Haripad, in Kochi, Thiruvananthapuram or Kozhikode?', 'Yes. We are based in Haripad, Alappuzha, and work with businesses across Kerala, including Kochi, Thiruvananthapuram, Kozhikode, Kollam and Kottayam, for both AI ads and AI automation.']
+  ['Do you work outside Haripad, in Kochi, Thiruvananthapuram or Kozhikode?', 'Yes. We are based in Haripad, Alappuzha, and work with businesses across Kerala, including Kochi, Thiruvananthapuram, Kozhikode, Kollam and Kottayam, for both AI ads and AI automation.'],
+  ['Do you build AI voice agents for business calls?', 'Yes. We build AI voice agents that answer enquiry calls, collect the caller\'s details, and make follow-up or reminder calls, then pass serious leads to your team with a summary.'],
+  ['Do you make AI jingles and brand films?', 'Yes. Besides AI TV commercials and product ads, we create AI jingles, cinematic AI brand films and AI motion graphics, in Malayalam and English.'],
+  ['AI പരസ്യം (AI advertisement) എങ്ങനെയാണ് ഉണ്ടാക്കുന്നത്?', 'ഞങ്ങൾ ഹരിപ്പാട്, ആലപ്പുഴയിലെ ജനറേറ്റീവ് AI സ്റ്റുഡിയോ ആണ്. നിങ്ങളുടെ ഉൽപ്പന്നത്തിന്റെ ചിത്രങ്ങളും ആശയവും അടിസ്ഥാനമാക്കി മലയാളത്തിലും ഇംഗ്ലീഷിലും AI ടിവി പരസ്യങ്ങളും വീഡിയോ പരസ്യങ്ങളും ഞങ്ങൾ ഉണ്ടാക്കുന്നു. WhatsApp വഴി ബന്ധപ്പെടൂ.']
 ];
 
 export default function FAQSection() {
