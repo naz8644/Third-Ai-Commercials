@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Clapperboard, Workflow } from 'lucide-react';
-import FloatingCore from '../three/FloatingCore';
 import CanvasErrorBoundary from './CanvasErrorBoundary';
 import { AutoVisual } from './v2/Visuals';
 import AdVideo from './v2/AdVideo';
@@ -16,6 +15,13 @@ const channels = [
 ];
 
 const ease = [0.16, 1, 0.3, 1];
+
+// FloatingCore pulls in the full three.js library (~600kB+) just to render a
+// decorative, low-opacity, pointer-events-none visual behind the hero text.
+// It is not on the LCP path (the hero headline/text paints independently),
+// so it is lazy-loaded and allowed to pop in slightly after first paint
+// rather than blocking every visitor's main bundle.
+const FloatingCore = lazy(() => import('../three/FloatingCore'));
 
 function Track({ tone, icon, kicker, title, text, tags, href, cta, visual, delay }) {
   const reduce = useReducedMotion();
@@ -56,7 +62,9 @@ export default function HeroSection() {
     <section id="home" className="relative w-full overflow-hidden bg-[#050507] pt-28 sm:pt-36 pb-16 sm:pb-24 select-none">
       <div className="absolute inset-x-0 top-0 h-[100svh] z-0 pointer-events-none overflow-hidden opacity-40">
         <CanvasErrorBoundary>
-          <FloatingCore className="w-full h-full pointer-events-none" />
+          <Suspense fallback={null}>
+            <FloatingCore className="w-full h-full pointer-events-none" />
+          </Suspense>
         </CanvasErrorBoundary>
       </div>
       <div className="absolute inset-0 v2-grid-bg pointer-events-none" />
