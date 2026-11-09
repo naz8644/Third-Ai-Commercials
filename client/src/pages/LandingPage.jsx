@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import CustomCursor from '../components/CustomCursor';
-import BackgroundCanvas from '../components/BackgroundCanvas';
 import CanvasErrorBoundary from '../components/CanvasErrorBoundary';
+
+// Decorative 3D background — not needed for first paint, so it's split out
+// of the main bundle and only fetched once the page is already interactive.
+const BackgroundCanvas = lazy(() => import('../components/BackgroundCanvas'));
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AdsSection from '../components/v2/AdsSection';
@@ -19,7 +22,9 @@ export default function LandingPage() {
     <div className="min-h-screen bg-[#050507] text-white selection:bg-[#ff2751] selection:text-white font-sans relative overflow-x-hidden">
       <CustomCursor />
       <CanvasErrorBoundary fallback={null}>
-        <BackgroundCanvas />
+        <Suspense fallback={null}>
+          <BackgroundCanvas />
+        </Suspense>
       </CanvasErrorBoundary>
       <Navbar />
       <main className="relative z-10">
