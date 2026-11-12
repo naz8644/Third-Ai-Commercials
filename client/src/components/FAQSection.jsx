@@ -17,7 +17,8 @@ export const faqs = [
   ['Do you work outside Haripad, in Kochi, Thiruvananthapuram or Kozhikode?', 'Yes. We are based in Haripad, Alappuzha, and work with businesses across Kerala, including Kochi, Thiruvananthapuram, Kozhikode, Kollam and Kottayam, for both AI ads and AI automation.'],
   ['Do you build AI voice agents for business calls?', 'Yes. We build AI voice agents that answer enquiry calls, collect the caller\'s details, and make follow-up or reminder calls, then pass serious leads to your team with a summary.'],
   ['Do you make AI jingles and brand films?', 'Yes. Besides AI TV commercials and product ads, we create AI jingles, cinematic AI brand films and AI motion graphics, in Malayalam and English.'],
-  ['AI പരസ്യം (AI advertisement) എങ്ങനെയാണ് ഉണ്ടാക്കുന്നത്?', 'ഞങ്ങൾ ഹരിപ്പാട്, ആലപ്പുഴയിലെ ജനറേറ്റീവ് AI സ്റ്റുഡിയോ ആണ്. നിങ്ങളുടെ ഉൽപ്പന്നത്തിന്റെ ചിത്രങ്ങളും ആശയവും അടിസ്ഥാനമാക്കി മലയാളത്തിലും ഇംഗ്ലീഷിലും AI ടിവി പരസ്യങ്ങളും വീഡിയോ പരസ്യങ്ങളും ഞങ്ങൾ ഉണ്ടാക്കുന്നു. WhatsApp വഴി ബന്ധപ്പെടൂ.']
+  ['AI പരസ്യം (AI advertisement) എങ്ങനെയാണ് ഉണ്ടാക്കുന്നത്?', 'ഞങ്ങൾ ഹരിപ്പാട്, ആലപ്പുഴയിലെ ജനറേറ്റീവ് AI സ്റ്റുഡിയോ ആണ്. നിങ്ങളുടെ ഉൽപ്പന്നത്തിന്റെ ചിത്രങ്ങളും ആശയവും അടിസ്ഥാനമാക്കി മലയാളത്തിലും ഇംഗ്ലീഷിലും AI ടിവി പരസ്യങ്ങളും വീഡിയോ പരസ്യങ്ങളും ഞങ്ങൾ ഉണ്ടാക്കുന്നു. WhatsApp വഴി ബന്ധപ്പെടൂ.'],
+  ['Do you make AI product videos in Malayalam with voice and lip-sync?', 'Yes. We create AI product videos, UGC-style reels and explainer videos with Malayalam AI voiceovers and lip-synced AI presenters, so the ad speaks naturally to your Kerala audience.']
 ];
 
 export default function FAQSection() {
