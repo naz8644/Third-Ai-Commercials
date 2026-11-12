@@ -4,7 +4,7 @@
 
 ## Services
 
-- [AI Ad Services](https://thirdaicommercials.com/#ads): AI TV commercials, AI product ads, AI fashion campaigns, AI brand films, AI UGC videos and AI motion graphics, made in Malayalam and English. Our AI commercials have aired on Kerala TV channels including Asianet News, Manorama News, Mathrubhumi News, 24 News, MediaOne and Reporter TV.
+- [AI Ad Services](https://thirdaicommercials.com/#ads): AI TV commercials, AI product ads, AI fashion campaigns, AI brand films, AI UGC videos and AI motion graphics, made in Malayalam and English. Also offers hybrid shoots that combine real, on-camera product/location/talent footage with AI-generated visuals. Our AI commercials have aired on Kerala TV channels including Asianet News, Manorama News, Mathrubhumi News, 24 News, MediaOne and Reporter TV.
 - [AI Automation Services](https://thirdaicommercials.com/#automation): AI WhatsApp and chat assistants, AI voice agents, lead capture and follow-up, reports, and workflow/CRM automation built with tools like n8n.
 - [FAQ](https://thirdaicommercials.com/#faq): Answers on turnaround time, pricing approach, Malayalam-language ads, automation scope, and areas served.
 - [Contact](https://thirdaicommercials.com/#contact): Phone and WhatsApp +91 95391 01061, email Thirdaicommercials@gmail.com.

@@ -12,6 +12,17 @@ export const servicesList = [
     )
   },
   {
+    title: 'Hybrid Shoot: Real + AI',
+    desc: "Not every ad has to be 100% AI. We shoot your real product, location or talent on camera, then blend in AI-generated visuals, backgrounds and effects — real footage where it matters, AI where it saves you time and budget.",
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M23 7l-7 5 7 5V7z" />
+        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+        <path d="M12.5 2.5l1.1 2.3 2.4.4-1.8 1.7.4 2.4-2.1-1.1-2.1 1.1.4-2.4-1.8-1.7 2.4-.4z" fill="rgba(255, 42, 59, 0.35)" />
+      </svg>
+    )
+  },
+  {
     title: 'AI Product Ads',
     desc: "People scroll past hundreds of ads every day. Yours won't be one of them. We build product ads so visually sharp and unexpected that your audience stops, watches, and remembers.",
     icon: (
