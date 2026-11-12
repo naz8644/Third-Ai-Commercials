@@ -39,6 +39,10 @@ export default function AboutSection() {
                   <img
                     src={f.image}
                     alt={f.name}
+                    width="128"
+                    height="128"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
