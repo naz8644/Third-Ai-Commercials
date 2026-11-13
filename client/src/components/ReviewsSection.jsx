@@ -47,7 +47,7 @@ export default function ReviewsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonialsList.slice(0, 3).map((t, idx) => (
+          {testimonialsList.map((t, idx) => (
             <div
               key={idx}
               className="bg-[#131313] border border-[#222] rounded-xl p-7 flex flex-col justify-between relative hover:border-[#ff2751]/50 transition duration-300"
