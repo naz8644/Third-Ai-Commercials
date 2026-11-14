@@ -42,6 +42,8 @@ export default function Footer() {
               <img
                 src="/images/logo_cropped.png"
                 alt="Third AI Commercials"
+                width="300"
+                height="282"
                 className="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="flex flex-col">

@@ -37,6 +37,8 @@ export default function Navbar() {
         <img
           src="/images/logo_cropped.png"
           alt="Third AI Commercials"
+          width="300"
+          height="282"
           className="h-9 w-auto object-contain"
         />
         <span className="font-display font-black text-lg tracking-wider text-white">
